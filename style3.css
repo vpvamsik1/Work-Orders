@@ -1,0 +1,63 @@
+.navbar-light {
+    background-color: #054D87;
+    height:70px;
+}
+body {
+    background-color: #E1EEFD;
+}
+#C1 {
+ 
+  margin-top: 60px;
+ 
+}
+h1 {
+  margin-bottom:10px;
+  color: #054D87;
+  text-decoration: none;
+  border-bottom: 3px solid #054D87;
+  width:240px;
+  margin-bottom: 40px;
+}
+
+thead {
+    background-color: #054D87;
+    color: white;
+}
+#C2 {
+  margin-top: 30px;
+  border: 1px solid #054D87;
+  width:1000px;
+  padding-top: 30px;
+}
+button {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#example-search-input {
+  height:100px;
+
+}
+textarea {
+  height:100px;
+  width:800px;
+}
+.I1 {
+  margin-left: 20px;
+}
+#heading3 {
+  height:40px;
+  margin-top: 30px;
+  background-color: #054D87;
+}
+.card{
+  margin-top: 20px;
+  background-color: #054D87;
+  border:1px solid #054D87;
+  padding: 10px;
+  padding-top: 15px;
+  color:white;
+}
+#detailedHeading{
+  width:200px;
+}

@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
+    <title>Work Order</title>
+
+    <style type = "text/css">
+        .navbar-light{
+            background-color: #054D87;
+            height:70px;
+        }
+        body {
+            background-color: #E1EEFD;
+        }
+        #C1{
+         
+          margin-top: 30px;
+         
+        }
+        h1{
+          margin-bottom:10px;
+          color: #054D87;
+          text-decoration: none;
+          width:240px;
+          margin-bottom: 40px;
+        }
+        button{
+          /* margin-top: 20px; */
+        }
+        thead{
+            background-color: #054D87;
+            color: white;
+        }
+        #ANC{
+            width:368px;
+        }
+        #Com{
+            width:200px;
+        }
+        #complaint{
+            color:black;
+        }
+        .I2{
+            margin-top: 7px;
+        }
+        #submit2{
+            width:100px;
+        }
+    </style>
+  </head>
+  <body>
+<!-- As a link -->
+  
+      <!-- As a heading -->
+
+    <nav class="navbar navbar-light" id="heading">
+        <span class="navbar-brand mb-0 h1 text-white"> Task Management System </span>
+    </nav>
+    <div class="container">
+          <h1 class="mx-auto" id="detailedHeading"></h1>
+        
+          <div class="container" id="C2">
+                <div class="form-group row">
+                    <label for="example-number-input" class="col-2 col-form-label" >Facility Number:</label>
+                    <div class="col-10">
+                      <input class="form-control" type="number" id = "roomnumber-input">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="example-text-input" class="col-2 col-form-label">Your Name:</label>
+                    <div class="col-10">
+                      <input class="form-control" type="text" id="employee-name-input">
+                    </div>
+                  </div>
+    
+                  <div class="form-group row">
+    
+                      <label for="example-datetime-local-input" class="col-2 col-form-label">Call for Help:</label>
+                      <div class="col-10">
+    
+                          <select id="type-input">	
+                              <option class = "type-input" value = "mechanic"> mechanic </option>
+                              <option class = "type-input" value = "plumber">plumber</option>
+                              <option class = "type-input" value = "termite"> exterminator </option>
+                              <option class = "type-input" value = "electrician" >electrician</option>
+                              <option class = "type-input" value = "toilet" >toilet cleaner</option>
+                              <option class = "type-input" value = "painter">painter</option>
+                            </select>
+
+                            <div id = "gif"> </div>
+
+                      </div>
+                  </div>
+                  <div class="form-group row">
+    
+                      <label for="example-search-input" class="col-2 col-form-label">Details: </label>
+    
+                      <div class="col-10">
+                        <!-- <input class="form-control" type="search" value="How do I shoot web" id="example-search-input"> -->
+                        <textarea class="form-control" type="search" value="How do I shoot web" id = "comment-input"></textarea>
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="example-datetime-local-input" class="col-2 col-form-label">Priority:</label>
+                        <div class="col-10">
+                            <select id ="priority-input">	
+                                <option></option>
+                                <option>Low</option>
+                                <option>Medium</option>
+                                <option>High</option>
+                                <option value = "Urgent">URGENT</option>
+                              </select>
+                        </div>
+                        
+
+                        </div>
+    
+                    </div>
+
+                  
+                    <button type="button" class="btn btn-info" id = "submit">Add New Work Order </button>
+                    <button  button type="button" class="btn btn-info" id="back"> Back </button>
+                    <div id="trump"></div>
+            </div>
+
+
+
+
+    </div>
+    <div id="placesContainer">
+
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+
+    <!-- load page scripts -->
+    <script src="firebaseInit.js" type="text/javascript"></script>
+    <script src="underscore-min.js"> </script>
+    <script src="index4.js"></script>
+
+  </body>
+</html>
